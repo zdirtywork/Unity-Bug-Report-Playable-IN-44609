@@ -16,3 +16,11 @@ Place the animation event on the first frame of the AnimationClip. At some point
 Expected result: The "Event Counter" value should be "1".
 
 Actual result: The "Event Counter" value is "2".
+
+## Solution
+
+Do not add the AnimationEvent at the beginning of the AnimationClip.
+
+You can still add the AnimationEvent at `frame 0` of the AnimationClip, but do not add it at `0% progress`.
+
+![Sample Image](./imgs/img_anim_event_position.png)
